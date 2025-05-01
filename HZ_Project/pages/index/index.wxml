@@ -25,10 +25,10 @@
     </navigator>
   </view>
 </view>
-<!-- 新增四个固定按钮 -->
+<!-- 新增固定按钮容器 -->
 <view class="fixed-button-container">
-  <button class="fixed-button" bindtap="goToPageA">甲</button>
-  <button class="fixed-button" bindtap="goToPageB">乙</button>
-  <button class="fixed-button" bindtap="goToPageC">丙</button>
-  <button class="fixed-button" bindtap="goToPageD">丁</button>
+  <button class="fixed-button">甲</button>
+  <button class="fixed-button">乙</button>
+  <button class="fixed-button">丙</button>
+  <button class="fixed-button">丁</button>
 </view>

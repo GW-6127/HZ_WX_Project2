@@ -52,13 +52,32 @@ swiper image {
   background-position: center;
 }
 
-.service-name { /* 服务内容文字大小，位置 */
-  font-size: 30rpx; 
-  margin-bottom: 50rpx;
-  margin-left: -40rpx;  /* 增加左边距，向右移动文字 */
-  margin-top: -60rpx;  /* 增加上边距，向下移动文字 */
+.service-name {
+  font-size: 28rpx; 
+  margin-bottom: 10rpx;
 }
 
 .service-desc {
   font-size: 24rpx; 
 } 
+
+/* 新增固定按钮容器样式 */
+.fixed-button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(96, 144, 184);
+  border-top: 2rpx solid #e0e0e0; /* 分界线粗细和颜色 */
+  padding: 35rpx 10rpx;
+}
+
+/* 新增固定按钮样式 */
+.fixed-button {
+  font-size: 28rpx;
+  color: #333;
+  background-color: transparent;
+  border: none;
+}
