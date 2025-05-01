@@ -61,7 +61,7 @@ swiper image {
   font-size: 24rpx; 
 } 
 
-/* 新增固定按钮容器样式 */
+/* 新增固定图片按钮容器样式 */
 .fixed-button-container {
   position: fixed;
   bottom: 0;
@@ -69,15 +69,12 @@ swiper image {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(96, 144, 184);
-  border-top: 2rpx solid #e0e0e0; /* 分界线粗细和颜色 */
-  padding: 35rpx 10rpx;
+  background-color: rgb(147, 201, 226);
+  border-top: 1rpx solid #e0e0e0;
+  padding: 45rpx 20rpx;
 }
 
-/* 新增固定按钮样式 */
-.fixed-button {
-  font-size: 28rpx;
-  color: #333;
-  background-color: transparent;
-  border: none;
+.fixed-button-container image {
+  width: 50rpx;
+  height: 50rpx;
 }

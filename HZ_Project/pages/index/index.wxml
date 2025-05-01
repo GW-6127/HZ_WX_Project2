@@ -25,10 +25,10 @@
     </navigator>
   </view>
 </view>
-<!-- 新增固定按钮容器 -->
+<!-- 新增固定图片按钮容器 -->
 <view class="fixed-button-container">
-  <button class="fixed-button">甲</button>
-  <button class="fixed-button">乙</button>
-  <button class="fixed-button">丙</button>
-  <button class="fixed-button">丁</button>
+  <image src="{{buttonImages[pg_index]}}" mode="aspectFit" bindtap="goToPage1" data-index="pg_index"></image>
+  <image src="{{buttonImages[pg_B]}}" mode="aspectFit" bindtap="goToPage2" data-index="pg_B"></image>
+  <image src="{{buttonImages[pg_C]}}" mode="aspectFit" bindtap="goToPage3" data-index="pg_C"></image>
+  <image src="{{buttonImages[pg_4]}}" mode="aspectFit" bindtap="goToPage4" data-index="pg_4"></image>
 </view>

@@ -12,7 +12,20 @@ Page({
       'https://example.com/banner1.jpg',
       'https://example.com/banner2.jpg',
       'https://example.com/banner3.jpg'
-    ]
+    ],
+    buttonImages: [
+      'https://example.com/button1-a.jpg',
+      'https://example.com/button2-a.jpg',
+      'https://example.com/button3-a.jpg',
+      'https://example.com/button4-a.jpg'
+    ],
+    originalImages: [
+      'https://example.com/button1-a.jpg',
+      'https://example.com/button2-a.jpg',
+      'https://example.com/button3-a.jpg',
+      'https://example.com/button4-a.jpg'
+    ],
+    activeButtonIndex: -1
   },
   onLoad() {
       wx.getWindowInfo({
@@ -64,24 +77,47 @@ Page({
           url: '/pages/banner/detail'
       });
   },
-  goToPageA() {
-    wx.switchTab({
-      url: '/pages/index/index'
+  goToPage1(e) {
+    this.switchButtonImage(e);
+    wx.navigateTo({
+      url: '/pages/page1/index'
     });
   },
-  goToPageB() {
+  goToPage2(e) {
+    this.switchButtonImage(e);
     wx.navigateTo({
-      url: '/pages/pageB/pageB'
+      url: '/pages/page2/index'
     });
   },
-  goToPageC() {
+  goToPage3(e) {
+    this.switchButtonImage(e);
     wx.navigateTo({
-      url: '/pages/pageC/pageC'
+      url: '/pages/page3/index'
     });
   },
-  goToPageD() {
+  goToPage4(e) {
+    this.switchButtonImage(e);
     wx.navigateTo({
-      url: '/pages/pageD/pageD'
+      url: '/pages/page4/index'
+    });
+  },
+  switchButtonImage(e) {
+    const index = e.currentTarget.dataset.index;
+    const buttonImages = this.data.buttonImages;
+    const originalImages = this.data.originalImages;
+    const activeButtonIndex = this.data.activeButtonIndex;
+
+    // 恢复之前激活的按钮图片
+    if (activeButtonIndex !== -1) {
+      buttonImages[activeButtonIndex] = originalImages[activeButtonIndex];
+    }
+
+    // 切换当前点击的按钮图片
+    buttonImages[index] = buttonImages[index].includes('-a.jpg') ? buttonImages[index].replace('-a.jpg', '-b.jpg') : originalImages[index];
+
+    this.setData({
+      buttonImages,
+      activeButtonIndex: index
     });
   }
 });
