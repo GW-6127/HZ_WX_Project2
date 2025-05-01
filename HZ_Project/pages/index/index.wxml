@@ -1,7 +1,6 @@
 <view class="title-box">
   <view class="main-title">主页</view>
 </view>
-<!-- 轮播图独立于.main-container -->
 <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" bindchange="swiperChange">
   <block wx:for="{{banners}}" wx:key="*this">
     <swiper-item>
