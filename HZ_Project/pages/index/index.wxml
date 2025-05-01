@@ -1,6 +1,7 @@
 <view class="title-box">
   <view class="main-title">主页</view>
 </view>
+<!-- 轮播图独立于.main-container -->
 <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" bindchange="swiperChange">
   <block wx:for="{{banners}}" wx:key="*this">
     <swiper-item>
@@ -23,4 +24,11 @@
       </view>
     </navigator>
   </view>
+</view>
+<!-- 新增四个固定按钮 -->
+<view class="fixed-button-container">
+  <button class="fixed-button" bindtap="goToPageA">甲</button>
+  <button class="fixed-button" bindtap="goToPageB">乙</button>
+  <button class="fixed-button" bindtap="goToPageC">丙</button>
+  <button class="fixed-button" bindtap="goToPageD">丁</button>
 </view>

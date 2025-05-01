@@ -63,5 +63,25 @@ Page({
       wx.navigateTo({
           url: '/pages/banner/detail'
       });
+  },
+  goToPageA() {
+    wx.switchTab({
+      url: '/pages/index/index'
+    });
+  },
+  goToPageB() {
+    wx.navigateTo({
+      url: '/pages/pageB/pageB'
+    });
+  },
+  goToPageC() {
+    wx.navigateTo({
+      url: '/pages/pageC/pageC'
+    });
+  },
+  goToPageD() {
+    wx.navigateTo({
+      url: '/pages/pageD/pageD'
+    });
   }
 });

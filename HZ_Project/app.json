@@ -1,24 +1,21 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/service/detail",
+    "pages/banner/detail",
+    "pages/pageB/pageB",
+    "pages/pageC/pageC",
+    "pages/pageD/pageD"
   ],
   "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "HZ_WX_Project2",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "enablePullDownRefresh": false,
+    "renderer": "skyline",
+    "componentFramework": "miniprogram"
   },
   "style": "v2",
-  "renderer": "skyline",
-  "rendererOptions": {
-    "skyline": {
-      "defaultDisplayBlock": true,
-      "defaultContentBox": true,
-      "tagNameStyleIsolation": "legacy",
-      "disableABTest": true,
-      "sdkVersionBegin": "3.0.0",
-      "sdkVersionEnd": "15.255.255"
-    }
-  },
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "sitemapLocation": "sitemap.json"
 }

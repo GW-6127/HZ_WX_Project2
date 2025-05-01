@@ -3,5 +3,6 @@
   "projectname": "HZ_Project",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.8.2"
 }
