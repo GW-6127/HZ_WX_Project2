@@ -14,16 +14,16 @@ Page({
       'https://example.com/banner3.jpg'
     ],
     buttonImages: [
-      'https://example.com/button1-a.jpg',
-      'https://example.com/button2-a.jpg',
-      'https://example.com/button3-a.jpg',
-      'https://example.com/button4-a.jpg'
+      '/HZ_Project/images/button1-a.png',
+      '/HZ_Project/images/button1-b.png',
+      '/HZ_Project/images/button1-a.png',
+      '/HZ_Project/images/button1-b.png'
     ],
     originalImages: [
-      'https://example.com/button1-a.jpg',
-      'https://example.com/button2-a.jpg',
-      'https://example.com/button3-a.jpg',
-      'https://example.com/button4-a.jpg'
+      '/HZ_Project/images/button1-a.png',
+      '/HZ_Project/images/button1-b.png',
+      '/HZ_Project/images/button1-a.png',
+      '/HZ_Project/images/button1-b.png'
     ],
     activeButtonIndex: -1
   },

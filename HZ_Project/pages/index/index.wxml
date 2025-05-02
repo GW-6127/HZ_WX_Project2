@@ -27,7 +27,7 @@
 </view>
 <!-- 新增固定图片按钮容器 -->
 <view class="fixed-button-container">
-  <image src="{{buttonImages[pg_index]}}" mode="aspectFit" bindtap="goToPage1" data-index="pg_index"></image>
+  <image src="{{buttonImages[button1-a]}}" mode="aspectFit" bindtap="goToPage1" data-index="pg_index"></image>
   <image src="{{buttonImages[pg_B]}}" mode="aspectFit" bindtap="goToPage2" data-index="pg_B"></image>
   <image src="{{buttonImages[pg_C]}}" mode="aspectFit" bindtap="goToPage3" data-index="pg_C"></image>
   <image src="{{buttonImages[pg_4]}}" mode="aspectFit" bindtap="goToPage4" data-index="pg_4"></image>
